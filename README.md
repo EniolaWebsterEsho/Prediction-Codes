@@ -1,9 +1,7 @@
 # Prediction-Codes
 This repository consists of prediction codes. 
 
-This project is part of the work funded by the IGM (Integrated Groundwater Management) and NSF on groundwater recharge prediction in collaboration with The University of Alabama, Louisiana State University, University of Mississippi, Tuskegee University and Southern University. 
-
-# Prediction of surface water discharge
+# Prediction of groundwater level and surface water discharge
 The availability of water depends on residential, industrial, agricultural, and other related use. Due to the high socioeconomic activities that occur in South Eastern US, there is high dependence on water leading to increased water stress. Also, climate change has been predicted to cause more severe drought due to longer periods without rain and more frequent hot days in Alabama. The prediction of water availability is of paramount importance in water resource management therefore the goal of this study was to build a machine learning model to predict water variables.
 
 Bidirectional long short-term memory (Bi-LSTM) model was employed to learn the prediction models of discharge (cubic feet per second) in valley creek from historical data. The dataset was obtained from the USGS website for Valley Creek at Center St at Birmingham, Alabama. Time series of the gage height (feet) and discharge variables taken at 5 minutes intervals from October 1, 2021 to December 31, 2021 has a total of 26,460 records. The gage height, discharge and month were features used to build this model. The gage height is the height of the water in the stream above a reference point and the discharge is the volume of water moving down the stream per unit of time. The dataset was split into training datasets (90% of the observations) and testing datasets (10%). The model’s performance was assessed using mean absolute percentage error (MAPE) statistical metrics and the result showed the MAPE to be 2%.
